@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechVion Institute | Learn Build Grow</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+:root{--blue:#28baff;--pink:#f52bd4;--purple:#692dff;--green:#00dda1}
+body{font-family:Arial,sans-serif;background:#050a20;color:#fff;line-height:1.6}
+header{background:#080d2a;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;border-bottom:1px solid #253b73}
+.logo{font-size:25px;font-weight:bold;color:var(--blue)}
+.logo small{display:block;font-size:11px;letter-spacing:5px;color:white}
+nav{display:flex;gap:14px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover{color:var(--pink)}
+.hero{text-align:center;padding:85px 6%;background:radial-gradient(circle at top left,#48118b,transparent 45%),linear-gradient(130deg,#061638,#13072b,#06152d)}
+.hero h1{font-size:clamp(36px,6vw,65px);line-height:1.2}
+.hero h1 span{color:var(--blue)}
+.hero p{max-width:750px;margin:20px auto;color:#d0d8ef}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--purple),var(--pink));color:white;padding:11px 20px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;font-weight:bold;margin:5px}
+.btn:hover{opacity:.85}
+section{padding:60px 6%;scroll-margin-top:90px}
+.title{text-align:center;font-size:32px;color:var(--blue);margin-bottom:10px}
+.subtitle{text-align:center;color:#c5cce2;margin:0 auto 30px;max-width:750px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:#101a3b;border:1px solid #263e7c;border-radius:14px;overflow:hidden;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:var(--blue)}
+.card img{width:100%;height:180px;object-fit:cover;display:block;background:#111c3c}
+.content{padding:18px}
+.card h3{color:#ff63df;margin-bottom:8px}
+.card p{color:#d2d9ed;font-size:14px;margin:6px 0}
+.tag{color:#8ce5ff;font-size:12px}
+.about{background:#080f2b}
+.services .card{padding:22px}
+.service-icon{font-size:30px}
+.mentor{padding:22px}
+.mentor h3{color:var(--green)}
+.registration{background:linear-gradient(130deg,#111044,#2b0b46,#081d3d)}
+.form-wrap{max-width:850px;margin:auto;background:#0d1737;border:1px solid #31467f;border-radius:16px;padding:25px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.field{display:flex;flex-direction:column;gap:6px}
+.full{grid-column:1/-1}
+label{font-size:14px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #354a83;border-radius:7px;background:#050c24;color:white;font:inherit}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--blue)}
+.note{font-size:12px;color:#b9c5e2;margin-top:10px}
+.contact{text-align:center;background:#0a102d}
+.contact p{margin:8px}
+footer{text-align:center;padding:25px;background:#020515;color:#bdc6df}
+footer a{color:var(--blue)}
+@media(max-width:650px){
+header{justify-content:center;text-align:center}
+nav{justify-content:center}
+form{grid-template-columns:1fr}
+.full{grid-column:auto}
+.hero{padding:55px 5%}
+section{padding:45px 5%}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="#home" style="text-decoration:none">
+    <div class="logo">TECHVION <small>INSTITUTE</small></div>
+  </a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#workshops">Workshops</a>
+    <a href="#services">Services</a>
+    <a href="#mentors">Mentors</a>
+    <a href="#register">Register</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <p style="color:#00dda1;font-weight:bold;letter-spacing:3px">
+    SKILLS TODAY | BETTER TOMORROW
+  </p>
+  <h1>Learn. Build. <span>Grow.</span></h1>
+  <p>
+    Welcome to TechVion Institute! Learn technology, develop
+    practical digital skills, explore new opportunities and
+    build your future in the digital world.
+  </p>
+  <a class="btn" href="#courses">Explore Courses</a>
+  <a class="btn" href="#register">Register Now</a>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+<h2 class="title">Our Courses</h2>
+<p class="subtitle">Choose your learning path and register your interest.</p>
+
+<div class="grid">
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Web development">
+<div class="content">
+<h3>Web Development</h3>
+<p>Learn HTML, CSS, JavaScript and responsive website development.</p>
+<p><b>Duration:</b> 1 month</p>
+<p><b>Fee:</b> Rs. 1,000</p>
+<p><b>Mentor:</b> Mam Hamna</p>
+<a class="btn choose" data-program="Web Development" href="#register">Enroll</a>
+</div></article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80" alt="Freelancing">
+<div class="content">
+<h3>Freelancing</h3>
+<p>Learn service selection, portfolio building, client communication and proposals.</p>
+<p><b>Duration:</b> 1 month</p>
+<p><b>Fee:</b> Rs. 500</p>
+<p><b>Mentor:</b> Miss Areeba</p>
+<a class="btn choose" data-program="Freelancing" href="#register">Enroll</a>
+</div></article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Cyber security">
+<div class="content">
+<h3>Cyber Security</h3>
+<p>Explore online safety, network security, privacy and ethical security basics.</p>
+<p><b>Duration:</b> 1 month</p>
+<p><b>Fee:</b> Rs. 1,000</p>
+<a class="btn choose" data-program="Cyber Security" href="#register">Enroll</a>
+</div></article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80" alt="Artificial intelligence">
+<div class="content">
+<h3>AI Engineering Series</h3>
+<p>Discover artificial intelligence, machine learning and AI project concepts.</p>
+<p><b>Duration:</b> 6 months</p>
+<p><b>Fee:</b> Rs. 3,000</p>
+<p><b>Mentor:</b> Sir Faseeh</p>
+<a class="btn choose" data-program="AI Engineering Series" href="#register">Enroll</a>
+</div></article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="SEO analytics">
+<div class="content">
+<h3>SEO</h3>
+<p>Learn keyword research, on-page SEO, content optimization and organic traffic growth.</p>
+<p><b>Duration:</b> 1 month</p>
+<p><b>Fee:</b> Rs. 500</p>
+<p><b>Mentor:</b> Sir Arslan</p>
+<a class="btn choose" data-program="SEO" href="#register">Enroll</a>
+</div></article>
+
+</div>
+</section>
+
+<!-- FREE WORKSHOPS -->
+<section class="about" id="workshops">
+<h2 class="title">Free Workshops</h2>
+<p class="subtitle">Explore trending technology and career skills. Register for one workshop at a time.</p>
+<div class="grid">
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=700&q=80" alt="AI workshop">
+<div class="content"><h3>1. AI Tools for Students</h3><p>AI tools, productivity, research and responsible AI use.</p><a class="btn choose" data-program="Free Workshop: AI Tools for Students" href="#register">Join Free</a></div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=700&q=80" alt="Cyber security workshop">
+<div class="content"><h3>2. Cyber Security Awareness</h3><p>Phishing, passwords, privacy and safe browsing.</p><a class="btn choose" data-program="Free Workshop: Cyber Security Awareness" href="#register">Join Free</a></div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=700&q=80" alt="Career counselling">
+<div class="content"><h3>3. Career Counselling</h3><p>Career planning, skill selection and professional goals.</p><a class="btn choose" data-program="Free Workshop: Career Counselling" href="#register">Join Free</a></div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80" alt="Communication workshop">
+<div class="content"><h3>4. Communication Skills</h3><p>Public speaking, active listening and confident communication.</p><a class="btn choose" data-program="Free Workshop: Communication Skills" href="#register">Join Free</a></div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=700&q=80" alt="Video editing">
+<div class="content"><h3>5. Video Editing</h3><p>Video cuts, transitions, captions and short-form editing.</p><a class="btn choose" data-program="Free Workshop: Video Editing" href="#register">Join Free</a></div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=700&q=80" alt="Game development">
+<div class="content"><h3>6. Game Development</h3><p>Game concepts, basic mechanics and beginner tools.</p><a class="btn choose" data-program="Free Workshop: Game Development" href="#register">Join Free</a></div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=700&q=80" alt="Graphic design">
+<div class="content"><h3>7. Canva & Graphic Design</h3><p>Create attractive social media designs and banners.</p><a class="btn choose" data-program="Free Workshop: Canva and Graphic Design" href="#register">Join Free</a></div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&q=80" alt="Content creation">
+<div class="content"><h3>8. Content Creation</h3><p>Content ideas, hooks, captions and a simple content calendar.</p><a class="btn choose" data-program="Free Workshop: Content Creation" href="#register">Join Free</a></div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80" alt="SEO workshop">
+<div class="content"><h3>9. SEO Starter Workshop</h3><p>Keywords, search intent and website ranking fundamentals.</p><a class="btn choose" data-program="Free Workshop: SEO Starter Workshop" href="#register">Join Free</a></div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80" alt="Freelancing workshop">
+<div class="content"><h3>10. Freelancing Roadmap</h3><p>Choose a service, prepare samples and approach clients.</p><a class="btn choose" data-program="Free Workshop: Freelancing Roadmap" href="#register">Join Free</a></div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=700&q=80" alt="CV workshop">
+<div class="content"><h3>11. CV & LinkedIn Profile</h3><p>Present your skills, projects and education professionally.</p><a class="btn choose" data-program="Free Workshop: CV and LinkedIn Profile" href="#register">Join Free</a></div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80" alt="Prompt engineering">
+<div class="content"><h3>12. Prompt Engineering</h3><p>Write better prompts and evaluate AI-generated answers.</p><a class="btn choose" data-program="Free Workshop: Prompt Engineering" href="#register">Join Free</a></div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80" alt="Digital marketing">
+<div class="content"><h3>13. Digital Marketing Basics</h3><p>Understand audiences, content strategy and marketing metrics.</p><a class="btn choose" data-program="Free Workshop: Digital Marketing Basics" href="#register">Join Free</a></div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80" alt="Website workshop">
+<div class="content"><h3>14. Build Your First Website</h3><p>Learn website structure, HTML basics and publishing options.</p><a class="btn choose" data-program="Free Workshop: Build Your First Website" href="#register">Join Free</a></div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=700&q=80" alt="Python workshop">
+<div class="content"><h3>15. Python Programming Intro</h3><p>Explore Python basics, variables and beginner coding concepts.</p><a class="btn choose" data-program="Free Workshop: Python Programming Intro" href="#register">Join Free</a></div>
+</article>
+
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<h2 class="title">Our Digital Services</h2>
+<p class="subtitle">Creative services for individuals, creators and businesses.</p>
+<div class="grid">
+<div class="card services"><div class="service-icon">🎬</div><h3>Video Editing</h3><p>Reels, shorts and social media videos.</p></div>
+<div class="card services"><div class="service-icon">✍️</div><h3>Article Writing</h3><p>Informative and structured articles.</p></div>
+<div class="card services"><div class="service-icon">📝</div><h3>Content Writing</h3><p>Captions, website copy and social content.</p></div>
+<div class="card services"><div class="service-icon">🛍️</div><h3>Product Description</h3><p>Clear product features and benefit-focused copy.</p></div>
+<div class="card services"><div class="service-icon">🎨</div><h3>Logo Design</h3><p>Logo concepts and basic brand graphics.</p></div>
+<div class="card services"><div class="service-icon">🖼️</div><h3>Cover Page Design</h3><p>Cover pages, banners and social headers.</p></div>
+<div class="card services"><div class="service-icon">✨</div><h3>Animation</h3><p>Basic motion graphics and animated content.</p></div>
+<div class="card services"><div class="service-icon">🔎</div><h3>Fiverr Gig SEO</h3><p>Keyword research, gig titles and description optimization. Mentor: Sir Arslan.</p></div>
+</div>
+</section>
+
+<!-- MENTORS -->
+<section class="about" id="mentors">
+<h2 class="title">Our Mentors</h2>
+<p class="subtitle">Meet the mentors shared by TechVion Institute.</p>
+<div class="grid">
+<div class="card mentor"><h3>Sir Arslan</h3><p>SEO & Fiverr Gig SEO Mentor</p></div>
+<div class="card mentor"><h3>Miss Areeba</h3><p>Freelancing Mentor</p></div>
+<div class="card mentor"><h3>Mam Hamna</h3><p>Web Development Mentor</p></div>
+<div class="card mentor"><h3>Sir Faseeh</h3><p>AI Engineering Series Mentor</p></div>
+</div>
+</section>
+
+<!-- REGISTRATION -->
+<section class="registration" id="register">
+<h2 class="title">Student Registration</h2>
+<p class="subtitle">Fill in the form. Your details will be prepared in a WhatsApp message.</p>
+
+<div class="form-wrap">
+<form id="registrationForm">
+<div class="field">
+<label for="name">Full Name *</label>
+<input id="name" name="name" required placeholder="Enter your full name">
+</div>
+
+<div class="field">
+<label for="phone">WhatsApp Number *</label>
+<input id="phone" name="phone" type="tel" required placeholder="03XXXXXXXXX">
+</div>
+
+<div class="field">
+<label for="email">Email Address</label>
+<input id="email" name="email" type="email" placeholder="you@example.com">
+</div>
+
+<div class="field">
+<label for="city">City</label>
+<input id="city" name="city" placeholder="Enter your city">
+</div>
+
+<div class="field full">
+<label for="program">Select ONE Course or Workshop *</label>
+<select id="program" name="program" required>
+<option value="">Choose one option</option>
+<optgroup label="Paid Courses">
+<option>Web Development</option>
+<option>Freelancing</option>
+<option>Cyber Security</option>
+<option>AI Engineering Series</option>
+<option>SEO</option>
+</optgroup>
+<optgroup label="Free Workshops">
+<option>Free Workshop: AI Tools for Students</option>
+<option>Free Workshop: Cyber Security Awareness</option>
+<option>Free Workshop: Career Counselling</option>
+<option>Free Workshop: Communication Skills</option>
+<option>Free Workshop: Video Editing</option>
+<option>Free Workshop: Game Development</option>
+<option>Free Workshop: Canva and Graphic Design</option>
+<option>Free Workshop: Content Creation</option>
+<option>Free Workshop: SEO Starter Workshop</option>
+<option>Free Workshop: Freelancing Roadmap</option>
+<option>Free Workshop: CV and LinkedIn Profile</option>
+<option>Free Workshop: Prompt Engineering</option>
+<option>Free Workshop: Digital Marketing Basics</option>
+<option>Free Workshop: Build Your First Website</option>
+<option>Free Workshop: Python Programming Intro</option>
+</optgroup>
+</select>
+</div>
+
+<div class="field">
+<label for="level">Current Level</label>
+<select id="level" name="level">
+<option>Beginner</option>
+<option>Intermediate</option>
+<option>Advanced</option>
+</select>
+</div>
+
+<div class="field">
+<label for="mode">Preferred Mode</label>
+<select id="mode" name="mode">
+<option>Online</option>
+<option>In-person, if available</option>
+</select>
+</div>
+
+<div class="field full">
+<label for="message">Questions or Notes</label>
+<textarea id="message" name="message" rows="3" placeholder="Optional"></textarea>
+</div>
+
+<button class="btn full" type="submit">Submit Registration via WhatsApp</button>
+</form>
+<p class="note">Your form is not saved to a website database. WhatsApp will open with your details. Press Send there to submit your registration.</p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+<h2 class="title">Contact Us</h2>
+<p>For course enrollment, workshops and services, contact TechVion Institute.</p>
+<p><b>Phone / WhatsApp:</b> 03136298536</p>
+<p><b>Email:</b> <a style="color:#32c5ff" href="mailto:techvion5@gmail.com">techvion5@gmail.com</a></p>
+<a class="btn" href="https://wa.me/923136298536?text=Hello%20TechVion%20Institute">WhatsApp Us</a>
+<a class="btn" href="mailto:techvion5@gmail.com">Email Us</a>
+</section>
+
+<footer>
+<p>© 2026 TechVion Institute. All rights reserved.</p>
+<p>Learn • Build • Grow</p>
+</footer>
+
+<script>
+document.querySelectorAll(".choose").forEach(function(button){
+  button.addEventListener("click",function(){
+    document.getElementById("program").value=this.dataset.program;
+  });
+});
+
+document.getElementById("registrationForm").addEventListener("submit",function(event){
+  event.preventDefault();
+
+  const form=new FormData(this);
+  const message=
+`TECHVION INSTITUTE — STUDENT REGISTRATION
+
+Name: ${form.get("name")}
+Phone: ${form.get("phone")}
+Email: ${form.get("email") || "Not provided"}
+City: ${form.get("city") || "Not provided"}
+Selected Course/Workshop: ${form.get("program")}
+Current Level: ${form.get("level")}
+Preferred Mode: ${form.get("mode")}
+Notes: ${form.get("message") || "None"}`;
+
+  const url="https://wa.me/923136298536?text="+encodeURIComponent(message);
+  window.open(url,"_blank");
+});
+</script>
+
+</body>
+</html>
